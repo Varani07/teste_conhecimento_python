@@ -1,0 +1,25 @@
+- Atributo Classe Pessoa: Criatividade
+(aumenta o multiplicador de atividades artísticas/desbloqueia opções que dependem de criatividade)
+- Novo Item: Mangá
+(adicionado a loja, pode comprar um Mangá aleatório ou um específico que será mais caro)
+- Item Mangá será armazenado em um set() que será armazenado em um dicionário contendo nome do Mangá e seu set().
+- Ter toda coleção de um Mangá receberá um bônus. 
+- Atributo Classe Pessoa: Fome
+(cria a necessidade de se alimentar para não perder vida e eventualmente morrer)
+- Atributo Classe Pessoa: Vida
+- Atributo Classe Pessoa: Sorte
+(Pode afetar suas ações no geral)
+- Atributo Classe Pessoa: Nível 
+- Classe Tempo
+- Classe Ingrediente (preço)
+- Classe Receita
+- Classe Geladeira
+- Classe Emprego
+- Classe Trabalhador
+- Classe TrabalhadorGamer
+- Classe Jogo
+
+- Classe JogoVoid
+- Classe TreinadorVoid
+- Classe PetVoid
+- Class TipoVoid 

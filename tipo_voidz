@@ -1,0 +1,690 @@
+Tipos de Void:
+++ Super-efetivo
++ Efetivo
+. Neutro
+- Pouco-efetivo
+-- Muito pouco-efetivo
+* Nulo
+
+overall: ++/+/-/-- - *
+
+FOGO
+- Água --
+- Natureza ++
+- Voador -
+- Venenoso ++
+- Lutador +
+- Fantasma +
+- Gelo ++
+- Sombrio +
+- Luz -
+- Dragão *
+- Vento -
+- Anjo *
+- Gravidade -
+- Tecnológico ++
+overall: 4/3/4/1 - 2
+
+Água
+- Fogo ++
+- Natureza --
+- Elétrico --
+- Terrestre +
+- Voador -
+- Venenoso +
+- Fantasma ++
+- Gelo --
+- Vento -
+- Vapor *
+- Gravidade -
+- Tecnológico ++
+- Tempo *
+- Som -
+overall: 3/2/4/3 - 2
+
+Natureza
+- Fogo --
+- Água ++
+- Elétrico +
+- Terrestre --
+- Voador -
+- Fantasma -
+- Luz -
+- Dragão --
+- Vento -
+- Maldição
+- Vapor ++
+- Gravidade *
+- Místico +
+- Tecnológico -
+overall: 2/2/5/3 - 1
+
+Elétrico
+- Água ++
+- Natureza -
+- Terrestre *
+- Voador ++
+- Lutador +
+- Fantasma +
+- Gelo --
+- Luz *
+- Vento -
+- Vapor +
+- Gravidade *
+- Místico ++
+- Tecnológico ++
+- Som --
+overall: 4/3/2/2 - 3
+
+Normal
+- Voador -
+- Lutador --
+- Fantasma *
+- Sombrio +
+- Dragão --
+- Anjo ++
+- Maldição +
+- Vapor -
+- Gravidade *
+- Místico ++
+- Tempo -
+overall: 2/2/3/2 - 2
+
+Terrestre
+- Água -
+- Natureza ++
+- Elétrico ++
+- Terrestre +
+- Voador *
+- Lutador ++
+- Fantasma *
+- Gelo +
+- Dragão +
+- Vento -
+- Vapor -
+- Gravidade --
+- Místico *
+- Tecnológico ++
+- Som --
+overall: 4/3/3/2 - 3
+
+Voador
+- Fogo +
+- Água +
+- Natureza +
+- Elétrico --
+- Normal +
+- Terrestre ++
+- Voador +
+- Lutador -
+- Fantasma *
+- Gelo -
+- Luz -
+- Dragão ++
+- Vento --
+- Gravidade --
+- Místico --
+- Som -
+overall: 2/5/4/4 - 1
+
+Venenoso
+- Fogo --
+- Água -
+- Normal +
+- Terrestre *
+- Venenoso --
+- Lutador
+- Fantasma *
+- Gelo
+- Sombrio
+- Luz
+- Dragão
+- Vento
+- Anjo
+- Maldição
+- Vapor
+- Gravidade
+- Místico
+- Tecnológico
+- Tempo
+- Som 
+
+
+--------------------------------
+23 tipos
+- Fogo
+- Água
+- Natureza
+- Elétrico
+- Normal
+- Terrestre
+- Voador
+- Venenoso
+- Lutador
+- Fantasma
+- Gelo
+- Sombrio
+- Luz
+- Dragão
+- Vento
+- Anjo
+- Maldição
+- Vapor
+- Gravidade
+- Místico
+- Tecnológico
+- Tempo
+- Som 
+
+-----------------------------------
+- Fogo (Ondas de calor, lançar fogo, produzir armas de fogo, status: queimado, Explosão Flamejante)
+- Água (Jato de água, produzir armas de água)
+- Natureza (Mudança climática)
+- Elétrico (Raio, Choque, status: paralisado)
+- Normal (Mordida, Arranhão, Investida, fugir)
+- Terrestre (Terremoto)
+- Voador (Voar, Investida aérea)
+- Venenoso (Envenenar)
+- Lutador (Sequência de socos, soco sério, bonus atk)
+- Fantasma (possessão, bonus agilidade, desmaterialização, dano do além, murmúrio sinistro)
+- Gelo (status: congelado, sopro gélido)
+- Sombrio (raio das trevas)
+- Luz (raio de luz, status: cego)
+- Dragão (golpe do dragão, garra de dragão, sopro de tipo específico)
+- Vento (Rajada de vento, corte navalha, empurrão, parede de vento)
+- Anjo (Benção de ATK/Def/Agilidade/Tipo específico, Cura)
+- Maldição (Maldição de ATK/Def/Agilidade/Tipo específico, Corrente de dor)
+- Vapor (status: cego, neblina, vapor quente, vapor gelado)
+- Gravidade (campo gravitacional)
+- Místico ()
+- Tecnológico ()
+- Tempo ()
+- Som ()
+
+
+Habilidades do Tipo Fantasma
+Sombra Movediça: Permite que o fantasma se desloque rapidamente para se esquivar de ataques, aumentando a evasão temporariamente.
+
+Toque Espectral: Um ataque que causa dano e pode aplicar um efeito de medo no oponente, reduzindo sua precisão por algumas rodadas.
+
+Possessão: O fantasma pode tomar controle temporário de um inimigo, obrigando-o a atacar um aliado.
+
+Caminho das Sombras: Permite ao fantasma se teleportar para um local adjacente, evitando ataques.
+
+Murmúrio Sinistro: Um ataque que causa dano e tem a chance de paralisar o oponente devido ao medo.
+
+Espectro Protetor: Cria uma barreira espectral que reduz o dano recebido por um aliado.
+
+Desmaterialização: Permite que o fantasma se torne intangível por um turno, evitando todos os ataques.
+
+Grito Aterrador: Causa dano a todos os inimigos em campo e tem a chance de deixá-los com status de "amedrontado".
+
+Efeito de Ilusão: Cria uma cópia do fantasma que distrai os inimigos, reduzindo sua capacidade de ataque por um turno.
+
+Caminho do Além: Um ataque poderoso que pode causar dano massivo, mas custa uma quantidade significativa de energia ou vida do fantasma.
+
+
+Habilidades do Tipo Fogo
+Lança de Fogo: Um ataque direto que causa dano e tem a chance de queimar o oponente, causando dano contínuo por algumas rodadas.
+
+Onda de Calor: Cria uma onda de calor que pode causar dano a todos os inimigos em campo, reduzindo sua precisão temporariamente.
+
+Explosão Flamejante: Um ataque em área que causa dano em todos os inimigos, com uma chance de causar o status "queimado".
+
+Armadura de Fogo: Um buff que aumenta a defesa do usuário e reflete uma parte do dano recebido de volta ao atacante.
+
+Sopro Incandescente: Um ataque de curto alcance que causa dano em um único alvo, com uma chance de reduzir sua velocidade.
+
+Chamas Protetoras: Cria uma barreira de fogo ao redor de um aliado, reduzindo o dano que ele recebe e causando dano aos inimigos que o atacarem.
+
+Fogo do Inferno: Um ataque poderoso que causa dano massivo e pode ignorar a defesa do alvo.
+
+Vórtice de Fogo: Uma habilidade que cria um redemoinho de chamas, puxando inimigos próximos para o centro e causando dano a todos eles.
+
+Fogo Fátuo: Um ataque ilusório que causa dano e pode confundir o alvo, diminuindo sua precisão nos próximos ataques.
+
+Chama da Vida: Uma habilidade de cura que permite ao usuário recuperar um percentual de sua saúde ao custo de sua própria energia.
+
+
+Ataque de Raízes: Invoca raízes do chão para prender um inimigo, causando dano e imobilizando-o por uma rodada.
+
+Curar com a Terra: Uma habilidade de cura que permite recuperar saúde de um aliado, utilizando a energia da natureza.
+
+Tempestade de Folhas: Causa dano a todos os inimigos e pode reduzir a velocidade deles, deixando-os mais lentos para atacar.
+
+Semente Venenosa: Um ataque que causa dano e tem chance de envenenar o oponente, causando dano contínuo.
+
+Refúgio Natural: Cria um campo de proteção ao redor de um aliado, aumentando sua defesa e regenerando uma parte de sua saúde.
+
+Luz do Sol: Um ataque que causa dano e cura o usuário ao mesmo tempo, utilizando a energia solar.
+
+Ciclo da Vida: Restaura uma parte da energia ou habilidade de um aliado, permitindo que ele ataque novamente na mesma rodada.
+
+Fúria da Natureza: Um ataque poderoso que causa dano em área e pode aumentar o ataque do usuário por algumas rodadas.
+
+Camuflagem Verde: Permite que o usuário se esconda, aumentando sua evasão e dificultando a detecção pelos inimigos.
+
+Efeito Polinizador: Aumenta a eficácia de ataques de aliados do tipo Natureza, aumentando o dano que eles causam por um tempo limitado.
+
+
+Habilidades do Tipo Elétrico
+Choque Elétrico: Um ataque direto que causa dano e tem a chance de paralisar o alvo, impedindo-o de agir por uma rodada.
+
+Raio: Um ataque poderoso que atinge um único alvo, com alta probabilidade de causar dano crítico.
+
+Campo Elétrico: Cria um campo de eletricidade que aumenta a velocidade dos aliados e causa dano a inimigos que entram em contato.
+
+Carga Elétrica: O usuário carrega eletricidade, aumentando o poder de seu próximo ataque em troca de uma parte de sua energia.
+
+Descarga: Um ataque em área que causa dano a todos os inimigos, com a chance de causar confusão.
+
+Paralisia Instantânea: Um ataque rápido que garante paralisia no alvo, reduzindo sua capacidade de ataque e defesa.
+
+Escudo Energético: Um escudo que reduz o dano recebido por um aliado, refletindo uma parte de dano de volta ao atacante.
+
+Tempestade Elétrica: Um ataque que causa dano massivo em área e pode paralisar todos os inimigos afetados.
+
+Sobrecarga: Aumenta temporariamente o poder de ataque do usuário, mas causa dano a si mesmo após a habilidade.
+
+Corrente de Cura: Restaura uma parte da saúde de todos os aliados, utilizando energia elétrica para revitalizá-los.
+
+Essas habilidades ajudam a enfatizar a natureza rápida e poderosa do tipo Elétrico! Se precisar de mais ideias ou informações sobre outro tipo, estou à disposição.
+
+
+Habilidades do Tipo Normal
+Investida: Um ataque rápido que causa dano e pode aumentar a velocidade do usuário por uma rodada.
+
+Mordida: Um ataque que causa dano e tem chance de causar o status "sangramento", causando dano contínuo.
+
+Arranhão: Um ataque que causa dano e pode reduzir a defesa do alvo, tornando-o mais vulnerável a ataques futuros.
+
+Fuga Rápida: Permite ao usuário escapar de uma batalha ou evitar um ataque, aumentando a evasão temporariamente.
+
+Estratégia de Combate: Um buff que aumenta a precisão e a evasão do usuário por várias rodadas.
+
+Soco Rápido: Um ataque que causa dano e tem chance de dar um ataque extra se o usuário atacar primeiro.
+
+Foco: Aumenta temporariamente a potência do próximo ataque do usuário, mas reduz sua velocidade.
+
+Resistência: Um buff que aumenta a resistência do usuário a efeitos de status por algumas rodadas.
+
+Rugido de Guerra: Um grito que aumenta o ataque de todos os aliados, inspirando-os para lutar com mais força.
+
+Técnica de Combate: Um ataque que causa dano e pode aumentar a defesa do usuário após o ataque.
+
+
+Habilidades do Tipo Terrestre
+Terremoto: Um ataque em área que causa dano a todos os inimigos e pode derrubar os oponentes, reduzindo sua precisão.
+
+Pilar de Pedra: Invoca uma coluna de rocha que causa dano a um único alvo e tem chance de prender o oponente por uma rodada.
+
+Deslizamento de Terra: Um ataque que causa dano e pode causar o status "atordoado", impedindo o alvo de atacar na próxima rodada.
+
+Escudo de Terra: Um buff que aumenta a defesa do usuário, criando uma barreira de rocha ao seu redor.
+
+Ruptura de Solo: Um ataque que causa dano e pode abrir fendas no chão, causando dano contínuo aos inimigos em sua área.
+
+Efeito de Fissura: Causa dano a um inimigo e reduz sua velocidade, dificultando sua movimentação.
+
+Controle de Rocha: Permite ao usuário aumentar temporariamente sua própria defesa ou a de um aliado, usando rochas para proteger.
+
+Mudança de Terreno: Transforma o campo de batalha, aumentando a eficácia de ataques terrestres e reduzindo a de ataques aéreos.
+
+Golpe de Terra: Um ataque poderoso que causa dano massivo a um único alvo, com chance de causar o status "desmaio".
+
+Barreira de Terra: Cria uma parede de rocha que pode bloquear ataques inimigos por uma rodada, protegendo os aliados.
+
+
+Habilidades do Tipo Voador
+Investida Aérea: Um ataque rápido que causa dano e pode aumentar a velocidade do usuário por algumas rodadas.
+
+Rugido do Vento: Um ataque que causa dano em área e pode reduzir a precisão dos inimigos, dificultando seus ataques.
+
+Fuga Aérea: Permite ao usuário escapar de ataques e aumentar temporariamente a evasão.
+
+Turbilhão: Um ataque que causa dano a todos os inimigos e pode desorientá-los, reduzindo suas chances de ataque.
+
+Asas de Luz: Um buff que aumenta a velocidade e a evasão do usuário, permitindo que ele ataque primeiro na próxima rodada.
+
+Dança do Vento: Um movimento que aumenta a agilidade do usuário e pode curar um pouco da saúde dele.
+
+Corte Navalha: Um ataque que causa dano e pode causar sangramento, causando dano contínuo ao alvo.
+
+Tempestade de Penas: Um ataque em área que causa dano e tem chance de deixar os inimigos confusos, dificultando seus próximos ataques.
+
+Voo Célere: Aumenta temporariamente a velocidade do usuário e garante um ataque extra na próxima rodada.
+
+Escudo de Vento: Cria uma barreira de vento ao redor de um aliado, reduzindo o dano recebido e refletindo uma parte de volta ao atacante.
+
+
+Habilidades do Tipo Venenoso
+Picada Venenosa: Um ataque que causa dano e aplica o status de envenenamento, causando dano contínuo ao longo do tempo.
+
+Névoa Tóxica: Cria uma área de névoa que reduz a precisão dos inimigos e causa dano aos que estiverem dentro dela.
+
+Esporos Nocivos: Lança esporos que causam dano e têm chance de envenenar todos os inimigos em área.
+
+Toque Corrompido: Um ataque que causa dano e reduz a defesa do alvo, tornando-o mais vulnerável a ataques futuros.
+
+Gás Asfixiante: Um ataque que causa dano e tem a chance de paralisar o alvo, impedindo-o de agir por uma rodada.
+
+Armadilha Venenosa: Cria uma armadilha que, quando ativada, causa dano e aplica envenenamento ao inimigo.
+
+Cura Venenosa: Permite ao usuário curar uma parte de sua saúde, mas causa dano a todos os inimigos próximos.
+
+Sorriso do Diabo: Um ataque que causa dano e pode deixar o alvo confuso, dificultando seus próximos ataques.
+
+Toque de Morte: Um ataque poderoso que causa dano massivo e tem chance de causar o status "morto-vivo", incapacitando o alvo temporariamente.
+
+Barreira Tóxica: Cria uma barreira que reduz o dano recebido e causa dano a qualquer inimigo que ataque o usuário.
+
+
+Habilidades do Tipo Lutador
+Soco Rápido: Um ataque que causa dano e tem a chance de realizar um ataque extra se o usuário atacar primeiro.
+
+Sequência de Golpes: Um combo que atinge o inimigo várias vezes, causando dano em sequência.
+
+Soco Poderoso: Um ataque forte que causa dano massivo e pode reduzir a defesa do alvo por uma rodada.
+
+Esquiva Ágil: Permite que o usuário se esquive de um ataque, aumentando sua evasão temporariamente.
+
+Golpe Crítico: Um ataque que tem uma chance aumentada de causar um dano crítico, resultando em um impacto significativo.
+
+Força Bruta: Aumenta temporariamente o ataque do usuário, permitindo que ele cause mais dano nos próximos ataques.
+
+Contra-Ataque: Um ataque que ativa automaticamente após receber dano, permitindo que o usuário reaja rapidamente.
+
+Rugido de Combate: Um grito que aumenta o ataque de todos os aliados, inspirando-os a lutar com mais força.
+
+Cruzado: Um ataque em linha que atinge todos os inimigos em uma linha reta, causando dano a todos.
+
+Técnica de Defesa: Um movimento que aumenta a defesa do usuário por uma rodada e reduz o dano recebido.
+
+
+Habilidades do Tipo Gelo
+Sopro Gélido: Um ataque que causa dano e pode congelar o alvo, impedindo-o de agir por uma rodada.
+
+Estalactite: Invoca uma estalactite que cai do céu, causando dano a um único alvo e podendo causar sangramento.
+
+Tempestade de Neve: Um ataque em área que causa dano a todos os inimigos e pode reduzir a velocidade deles.
+
+Capa de Gelo: Cria uma armadura de gelo que aumenta a defesa do usuário e reflete parte do dano recebido.
+
+Raio Congelante: Um ataque poderoso que causa dano em um único alvo e tem alta chance de causar o status "congelado".
+
+Escudo de Gelo: Cria um escudo que reduz o dano recebido e pode congelar qualquer inimigo que o atacar.
+
+Dança do Gelo: Aumenta a evasão do usuário e tem a chance de curá-lo levemente com a energia do gelo.
+
+Chuva de Granizo: Um ataque em área que causa dano e pode deixar os inimigos com a precisão reduzida.
+
+Caminho Congelado: Cria uma pista de gelo que aumenta a velocidade do usuário e reduz a dos inimigos que a atravessam.
+
+Congelamento Rápido: Um ataque que causa dano e aumenta a chance de causar o status "congelado" em inimigos que já estão com algum efeito de gelo.
+
+
+Habilidades do Tipo Sombrio
+Raio das Trevas: Um ataque que causa dano e pode drenar uma parte da saúde do alvo para o usuário.
+
+Sussurros Sombrios: Um ataque que causa dano e pode confundir o alvo, diminuindo sua precisão e chance de acerto.
+
+Manto das Sombras: Aumenta temporariamente a evasão do usuário e reduz a precisão dos inimigos.
+
+Esfera de Trevas: Um ataque em área que causa dano a todos os inimigos e tem a chance de aplicar o status "medo".
+
+Toque do Mal: Um ataque que causa dano e pode envenenar o alvo, causando dano contínuo.
+
+Maldição da Noite: Um ataque que causa dano e reduz a defesa do alvo, tornando-o mais vulnerável.
+
+Reflexo das Sombras: Um escudo que reflete parte do dano recebido de volta ao atacante, causando dano sombrio.
+
+Fuga Sombria: Permite ao usuário escapar de um ataque e aumentar sua evasão por algumas rodadas.
+
+Sombras Protetoras: Cria uma barreira de sombras ao redor de um aliado, aumentando sua defesa e reduzindo o dano recebido.
+
+Escuridão Total: Um ataque poderoso que causa dano maciço e pode cegar os inimigos, reduzindo sua precisão.
+
+
+Habilidades do Tipo Luz
+Raio de Luz: Um ataque que causa dano e tem a chance de cegar o alvo, reduzindo sua precisão.
+
+Luz Curativa: Uma habilidade de cura que restaura a saúde de um aliado e remove efeitos negativos.
+
+Explosão Radiante: Um ataque em área que causa dano a todos os inimigos e pode aplicar o status "queimadura".
+
+Escudo de Luz: Cria um escudo protetor que reduz o dano recebido por um aliado e reflete uma parte do dano de volta ao atacante.
+
+Foco da Luz: Um buff que aumenta temporariamente o ataque do usuário e a precisão dos aliados.
+
+Fulgor: Um ataque que causa dano e pode causar um efeito de paralisia temporária, dificultando o movimento do alvo.
+
+Clarão Ofuscante: Causa dano e tem a chance de desorientar os inimigos, reduzindo sua precisão.
+
+Purificação: Remove todos os efeitos negativos de um aliado e restaura uma parte de sua saúde.
+
+Caminho Luminoso: Aumenta a velocidade do usuário e permite um ataque extra na próxima rodada.
+
+Aura Brilhante: Cria uma aura de luz que aumenta a defesa de todos os aliados e reduz o dano recebido por um tempo.
+
+
+Habilidades do Tipo Dragão
+Sopro do Dragão: Um ataque poderoso que causa dano em área e tem uma chance de causar o status "queimadura" nos inimigos.
+
+Garras do Dragão: Um ataque físico que causa dano a um único alvo e pode reduzir a defesa dele temporariamente.
+
+Voo Dracônico: Aumenta a evasão do usuário e permite que ele evite ataques por um turno.
+
+Rugido do Dragão: Um grito que aumenta o ataque de todos os aliados e pode causar medo nos inimigos, reduzindo sua precisão.
+
+Fúria Dracônica: Um ataque que causa dano massivo e aumenta temporariamente o poder de ataque do usuário.
+
+Escamas Protetoras: Cria uma barreira de escamas que aumenta a defesa do usuário e reflete parte do dano de volta ao atacante.
+
+Tempestade Dracônica: Um ataque em área que causa dano a todos os inimigos e pode deixá-los atordoados, reduzindo sua capacidade de ataque.
+
+Onda de Calor: Causa dano e tem a chance de queimar o alvo, causando dano contínuo.
+
+Despertar do Dragão: Um buff que aumenta significativamente o poder de ataque e defesa do usuário por várias rodadas.
+
+Olhos de Dragão: Um ataque que causa dano e pode reduzir a velocidade dos inimigos, dificultando suas ações.
+
+
+Habilidades do Tipo Vento
+Rajada de Vento: Um ataque que causa dano e pode empurrar o inimigo para trás, reduzindo sua capacidade de ataque.
+
+Corte Navalha: Um ataque rápido que causa dano e tem chance de deixar o alvo confuso.
+
+Fuga Aérea: Permite ao usuário se esquivar de um ataque, aumentando sua evasão e diminuindo a precisão do oponente.
+
+Tempestade Ciclônica: Um ataque em área que causa dano a todos os inimigos e pode desorientá-los, reduzindo sua precisão.
+
+Escudo de Vento: Cria uma barreira que reduz o dano recebido por um aliado e causa dano aos inimigos que o atacarem.
+
+Dança do Vento: Aumenta a agilidade do usuário e pode curá-lo levemente com a energia do vento.
+
+Furacão: Um ataque poderoso que causa dano em área e tem chance de atordoar todos os inimigos atingidos.
+
+Brisa Suave: Um buff que aumenta a velocidade e a evasão de todos os aliados, permitindo que ataquem primeiro.
+
+Caminho dos Ventos: Aumenta temporariamente a velocidade do usuário, garantindo um ataque extra na próxima rodada.
+
+Sussurro do Vento: Um ataque que causa dano e pode silenciar o alvo, impedindo-o de usar habilidades por uma rodada.
+
+
+Habilidades do Tipo Anjo
+Benção Divina: Restaura uma parte significativa da saúde de um aliado e aumenta temporariamente seu ataque.
+
+Luz Curativa: Uma habilidade de cura que remove todos os efeitos negativos de um aliado e restaura sua saúde.
+
+Sopro de Luz: Um ataque que causa dano e pode cegar o alvo, reduzindo sua precisão.
+
+Escudo Sagrado: Cria uma barreira que reduz o dano recebido por um aliado e reflete parte do dano de volta ao atacante.
+
+Voo Angelical: Aumenta a evasão do usuário e permite que ele evite ataques por um turno.
+
+Proteção Celestial: Um buff que aumenta a defesa de todos os aliados e reduz o dano recebido por várias rodadas.
+
+Rugido do Anjo: Um grito que aumenta o ataque de todos os aliados e pode inspirar confiança, aumentando suas chances de acerto.
+
+Cura Radiante: Restaura saúde de todos os aliados, utilizando energia divina para revitalizá-los.
+
+Chama Sagrada: Um ataque que causa dano e pode causar queimadura, simbolizando a purificação.
+
+Aura de Luz: Cria uma aura que aumenta a resistência a efeitos de status para todos os aliados por um tempo.
+
+
+Habilidades do Tipo Maldição
+Maldição de Fraqueza: Um ataque que causa dano e reduz o ataque do alvo por várias rodadas.
+
+Corrente de Dor: Causa dano ao alvo e, ao mesmo tempo, causa dano a um aliado, transmitindo a dor.
+
+Toque da Desgraça: Um ataque que causa dano e pode aplicar o status "sangramento", causando dano contínuo ao longo do tempo.
+
+Sussurro da Noite: Um ataque que causa dano e pode confundir o alvo, diminuindo sua precisão e chance de acerto.
+
+Desgosto: Causa dano e reduz a defesa do alvo, tornando-o mais vulnerável a ataques futuros.
+
+Sombra Maligna: Um ataque que causa dano e tem a chance de drenar uma parte da saúde do alvo para o usuário.
+
+Caminho da Ruína: Um buff que aumenta o poder dos ataques do usuário, mas causa dano a si mesmo após a habilidade.
+
+Domínio das Sombras: Cria uma área de efeito que reduz a velocidade e a precisão de todos os inimigos que entrarem nela.
+
+Toque Maldito: Um ataque que causa dano e pode envenenar o alvo, causando dano contínuo.
+
+Espírito Malévolo: Invoca uma entidade que causa dano a todos os inimigos e pode deixar um deles com o status "medo".
+
+
+Habilidades do Tipo Vapor
+Névoa Densa: Cria uma área de névoa que reduz a precisão dos inimigos e causa dano contínuo ao longo do tempo.
+
+Vapor Escaldante: Um ataque que causa dano e pode causar o status "queimadura", refletindo a natureza quente do vapor.
+
+Neblina Protetora: Cria uma barreira de vapor ao redor de um aliado, aumentando sua defesa e reduzindo o dano recebido.
+
+Explosão de Vapor: Um ataque que causa dano em área e tem a chance de deixar os inimigos confusos.
+
+Caminho de Vapor: Aumenta temporariamente a velocidade do usuário, permitindo que ele evite ataques e ataque primeiro.
+
+Toque de Vapor Frio: Um ataque que causa dano e pode congelar o alvo, impedindo-o de agir por uma rodada.
+
+Cura Vaporosa: Restaura uma parte da saúde do usuário e remove efeitos negativos, utilizando a energia do vapor.
+
+Golpe Vaporoso: Um ataque que causa dano e pode drenar um pouco da energia do alvo, reduzindo sua capacidade de ataque.
+
+Cortina de Vapor: Cria uma barreira de vapor que aumenta a evasão do usuário e permite evitar ataques por um turno.
+
+Tempestade de Vapor: Um ataque poderoso em área que causa dano a todos os inimigos e pode aplicar o status "desorientado".
+
+
+Habilidades do Tipo Gravidade
+Campo Gravitacional: Cria uma área de gravidade intensa que reduz a velocidade de todos os inimigos e causa dano ao longo do tempo.
+
+Pressão Gravitacional: Um ataque que causa dano e tem chance de atordoar o alvo, dificultando seus movimentos.
+
+Atração: Puxa um inimigo em direção ao usuário, causando dano e impedindo-o de escapar por uma rodada.
+
+Repulsão: Um ataque que empurra os inimigos para longe, causando dano e reduzindo sua precisão por um turno.
+
+Colapso Espacial: Um ataque poderoso que causa dano em área e pode causar o status "atordoado" em todos os inimigos atingidos.
+
+Manipulação Gravitacional: Aumenta a defesa do usuário, criando uma pressão gravitacional que desvia ataques.
+
+Desvio Gravitacional: Permite ao usuário evitar um ataque e desviar a força para um inimigo próximo, causando dano.
+
+Confinamento: Um ataque que causa dano e reduz a mobilidade do alvo, impedindo-o de se mover em duas rodadas.
+
+Desmaterialização: O usuário se torna intangível por um turno, evitando todos os ataques e utilizando a gravidade a seu favor para reposicionar-se.
+
+Efeito de Singularidade: Um ataque que causa dano massivo a um único alvo e tem chance de ignorar a defesa dele.
+
+
+Tipo: Místico
+Habilidades do Tipo Místico
+Ilusão: Cria uma cópia ilusória do usuário que confunde os inimigos, aumentando a evasão do usuário.
+
+Explosão Mística: Um ataque em área que causa dano e pode aplicar o status "confuso" aos inimigos.
+
+Escudo Mágico: Cria uma barreira mágica que reduz o dano recebido e pode refletir parte do dano de volta ao atacante.
+
+Transferência de Energia: Restaura uma parte da saúde de um aliado, dreno um pouco da energia do usuário.
+
+Encantamento: Aumenta temporariamente o ataque ou defesa de um aliado, usando magia para fortalecer suas capacidades.
+
+Bola de Fogo Mística: Um ataque que causa dano e tem a chance de deixar o alvo queimado.
+
+Visão do Futuro: Permite que o usuário evite um ataque, aumentando sua evasão e dando um ataque extra na próxima rodada.
+
+Ritual de Proteção: Um buff que aumenta a resistência a efeitos de status para todos os aliados por um tempo.
+
+Caminho das Estrelas: Aumenta a velocidade do usuário e permite um ataque adicional, utilizando a energia das estrelas.
+
+Desmaterialização: O usuário se torna intangível por um turno, evitando todos os ataques e permitindo que se reposicione.
+
+
+Tipo Tecnológico
+O tipo Tecnológico é baseado em habilidades avançadas relacionadas a máquinas, inteligência artificial e energia futurística. Seus ataques podem envolver lasers, drones, e hacking, focando em precisão e manipulação de status.
+
+Habilidades Tecnológicas
+Laser de Alta Precisão: Um feixe de energia altamente focado que causa grande dano a um único inimigo.
+Drone de Ataque: Libera um drone que ataca o inimigo durante vários turnos.
+Firewall Defensivo: Cria uma barreira digital que aumenta a defesa temporariamente.
+Raio de Pulso Eletromagnético: Ataca todos os inimigos e pode desativar habilidades tecnológicas por alguns turnos.
+Cura Nanotecnológica: Pequenos robôs naníticos restauram parte da vida de um aliado.
+Hacking de Sistemas: Afeta o adversário diretamente, invertendo seus controles ou enfraquecendo suas defesas.
+Armadura Cibernética: Aumenta a defesa física e especial do usuário por um número limitado de turnos.
+Ataque por Satélite: Um poderoso feixe de energia disparado do espaço, causando grande dano ao oponente.
+Escudo de Energia: Gera um escudo que absorve dano, especialmente eficaz contra ataques de energia.
+Sobrecarregar: Causa dano ao oponente, mas pode causar paralisia no usuário devido ao excesso de energia.
+
+
+
+Aqui estão mais detalhes sobre os tipos Tecnológico, Tempo, e Som, junto com 10 habilidades para cada um:
+
+Tipo Tecnológico
+O tipo Tecnológico é baseado em habilidades avançadas relacionadas a máquinas, inteligência artificial e energia futurística. Seus ataques podem envolver lasers, drones, e hacking, focando em precisão e manipulação de status.
+
+Habilidades Tecnológicas
+Laser de Alta Precisão: Um feixe de energia altamente focado que causa grande dano a um único inimigo.
+Drone de Ataque: Libera um drone que ataca o inimigo durante vários turnos.
+Firewall Defensivo: Cria uma barreira digital que aumenta a defesa temporariamente.
+Raio de Pulso Eletromagnético: Ataca todos os inimigos e pode desativar habilidades tecnológicas por alguns turnos.
+Cura Nanotecnológica: Pequenos robôs naníticos restauram parte da vida de um aliado.
+Hacking de Sistemas: Afeta o adversário diretamente, invertendo seus controles ou enfraquecendo suas defesas.
+Armadura Cibernética: Aumenta a defesa física e especial do usuário por um número limitado de turnos.
+Ataque por Satélite: Um poderoso feixe de energia disparado do espaço, causando grande dano ao oponente.
+Escudo de Energia: Gera um escudo que absorve dano, especialmente eficaz contra ataques de energia.
+Sobrecarregar: Causa dano ao oponente, mas pode causar paralisia no usuário devido ao excesso de energia.
+
+
+
+Tipo Tempo
+O tipo Tempo manipula o fluxo temporal, permitindo ao usuário alterar a sequência dos eventos ou afetar os oponentes de maneiras únicas, como congelar ou acelerar suas ações.
+
+Habilidades Temporais
+Aceleramento Temporal: Aumenta a velocidade de um aliado, permitindo que ele ataque duas vezes em um turno.
+Parada Temporal: Congela o tempo, impedindo que os oponentes ataquem no próximo turno.
+Reversão Temporal: Restaura a vida e status de um aliado ou de si mesmo ao estado de um turno anterior.
+Vórtice do Tempo: Gera um buraco no tempo que suga inimigos e os deixa incapazes de agir por um tempo.
+Cápsula Temporal: Coloca um aliado em uma cápsula de tempo, protegendo-o de qualquer ataque por um turno.
+Distorção Temporal: Altera a ordem de ataque no campo, invertendo quem ataca primeiro.
+Déjà Vu: Força o oponente a repetir sua última ação, seja um ataque ou movimento defensivo.
+Adiantamento Temporal: Permite ao usuário usar uma habilidade de um turno futuro antecipadamente, mas fica vulnerável depois.
+Ciclo Temporal: Roda o tempo de volta, revertendo efeitos negativos de status em todos os aliados.
+Erosão Temporal: Acelera o tempo ao redor de um oponente, causando dano ao longo do tempo e envelhecimento rápido.
+
+
+Tipo Som
+O tipo Som utiliza ondas sonoras, gritos e vibrações para causar dano ou afetar os inimigos de forma desorientadora. Seus ataques geralmente atingem múltiplos oponentes ou causam status como confusão e ensurdecimento.
+
+Habilidades Sônicas
+Grito Supersônico: Um grito estridente que causa dano e pode confundir os inimigos.
+Explosão de Eco: Ataque sonoro que ricocheteia entre os oponentes, causando mais dano a cada rebote.
+Onda de Vibração: Um ataque em área que atinge todos os inimigos e pode causar ensurdecimento.
+Barreira de Som: Cria uma barreira de ondas sonoras que aumenta a defesa contra ataques físicos e especiais.
+Canção Hipnótica: Uma melodia suave que faz os inimigos adormecerem por alguns turnos.
+Pulso Sonoro: Um pulso de som concentrado que ignora defesas e causa dano direto.
+Disruptor Sonoro: Uma frequência de som que interfere nas habilidades do oponente, podendo desativá-las temporariamente.
+Rugido Estonteante: Um rugido poderoso que atordoa todos os oponentes, impedindo-os de atacar por um turno.
+Murmúrio Sinistro: Um som quase inaudível que assombra o oponente, causando medo e reduzindo suas estatísticas de ataque.
+Chamada de Batalha: Um grito de guerra que aumenta o ataque de todos os aliados em campo por um turno.
