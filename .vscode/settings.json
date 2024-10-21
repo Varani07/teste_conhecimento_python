@@ -1,0 +1,7 @@
+{
+    "editor.fontSize": 18,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.showExecutionMessage": false,
+    "workbench.sideBar.location": "right"
+}
