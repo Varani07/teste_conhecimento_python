@@ -1,22 +1,27 @@
 import random
+from dao import DAO
+from itens import Computador
+import json
 
 class Pessoa():
     """Essa classe cria uma Pessoa"""
     def __init__(self, nome:str):
         self.nome = nome
         self.energia = random.randint(5, 25)
-        self.dinheiro = random.randint(50000, 250000)
-        self.carrinho_de_compras = []
-        self.itens = []
-        self.colecao = {}
-
+        self.dinheiro = random.randint(50, 250)
         self.vida = random.randint(20, 25)
         self.criatividade = random.randint(1, 5)
         self.conhecimento_culinaria = random.randint(0, 5)
         self.sorte = random.randint(0, 3)
         self.higiene = random.randint(20, 25)
         self.fome = random.randint(20, 25)
-        self.hora = "07:50 AM"
+
+        self.nivel = 0
+        self.nivel_cap = 20
+
+        self.carrinho_de_compras = []
+        self.itens = []
+        self.colecao = {}
 
     def __str__(self):
         return self.nome
@@ -29,6 +34,35 @@ class Pessoa():
 
     def descansar(self):
         pass
+
+    @property
+    def save(self):
+        salvar = DAO()
+        salvar.inserir('player_info', 'dados', '%s', self.player_to_json, "jogo salvo")
+
+    @property
+    def player_to_json(self):
+        player_dict = {
+            "nome": self.nome,
+            "energia": self.energia,
+            "dinheiro": self.dinheiro,
+            "vida": self.vida,
+            "criatividade": self.criatividade,
+            "culinaria": self.conhecimento_culinaria,
+            "sorte": self.sorte,
+            "higiene": self.higiene,
+            "fome": self.fome,
+            "nivel": self.nivel,
+            "nivel_cap": self.nivel_cap,
+            "carrinho_compras": [],
+            "itens": [],
+            "colecao": []   
+        }
+        player_dict['carrinho_compras'] = [{'memoria': item.memoria, "fans": item.quantidade_fans, "armazenamento":item.armazenamento, "preço":item.preco, "jogos": []} for item in self.carrinho_de_compras if isinstance(item, Computador)]
+        player_dict['itens'] = [{'memoria': item.memoria, "fans": item.quantidade_fans, "armazenamento":item.armazenamento, "preço":item.preco, "jogos": []} for item in self.carrinho_de_compras if isinstance(item, Computador)]
+        player_json = json.dumps(player_dict)
+
+        return player_json
 
     @property
     def currency(self):
@@ -78,11 +112,13 @@ class Pessoa():
     def comprar(self):
         total = 0
         print()
-        if len(self.carrinho_de_compras != 0):
+        if len(self.carrinho_de_compras) != 0:
             total = sum([item.preco for item in self.carrinho_de_compras])
             if self.dinheiro >= total:
                 self.dinheiro -= total
-                self.itens.append([item for item in self.carrinho_de_compras])
+                for item in self.carrinho_de_compras:
+                    self.itens.append(item)
+                    item.dono = f" de {self.nome}"
             else:
                 print("DINHEIRO INSUFICIENTE!")
             # COMPLETAR FUNÇÃO PARA EFETIVAR A COMPRA

@@ -12,7 +12,7 @@ class Loja():
     def ver_produtos(self):
         id = 1
         print()
-        print(f"- - - - {self._nome} - - - -")
+        print(f"- - - - {self.nome} - - - -")
         for item in self.produtos:
             if item.tipo == "Computador":
                 print(f"{id}: {item} por R${item.preco} | especificacoes: Armazenamento ({item.armazenamento}GB), Memoria ({item.memoria}GB), Fans (un.{item.quantidade_fans}) | num.serie: {item.num_de_serie}")

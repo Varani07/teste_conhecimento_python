@@ -29,10 +29,14 @@ class Computador(Itens):
         self.memoria = memoria
         self.armazenamento = armazenamento
         self.jogos = []
+        self.preco = self.colocar_preco
     
     @property
     def colocar_preco(self):
-        self.preco = (self.memoria * 2) + (self.quantidade_fans * 3) + (self.armazenamento * 3)
+        preco = (self.memoria * 2) + (self.quantidade_fans * 3) + (self.armazenamento * 3)
+        if len(self.jogos) > 0:
+            preco += sum([(jogo.preco)*0.25 for jogo in self.jogos])
+        return preco
     
     def ver_jogos(self):
         pass
