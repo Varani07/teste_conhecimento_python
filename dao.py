@@ -29,18 +29,14 @@ class DAO():
             if self.connection.is_connected:
                 self.connection.close()
 
-    def inserir(self, tabela: str, dados: str, values: str, valor_dados: tuple, tipo: str):
+    def inserir(self, tabela: str, dados: str, values: str, valor_dados: tuple):
         try:
             sql = f"INSERT INTO {tabela} ({dados}) VALUES ({values})"
             
-            self.cursor.execute(sql, (valor_dados,))
+            self.cursor.execute(sql, valor_dados)
 
             self.connection.commit()
             self.cursor.close()
-
-            print(f"| {tipo.upper()} COM SUCESSO! |")
-            print("------------------------------")
-            print()
 
         except Error as e:
             print()
@@ -80,7 +76,7 @@ class DAO():
             if self.connection.is_connected:
                 self.connection.close()
 
-    def deletar(self, tabela: str, where: str, valor_dados: tuple, tipo: str):
+    def deletar(self, tabela: str, where: str, valor_dados: tuple):
         try:
             sql = f"DELETE FROM {tabela} WHERE {where}"
             sc0 = "SET FOREIGN_KEY_CHECKS=0"
@@ -92,10 +88,6 @@ class DAO():
 
             self.connection.commit()
             self.cursor.close()
-
-            print(f"| {tipo.upper()} COM SUCESSO! |")
-            print("---------------------------------------------------------")
-            print()
 
         except Error as e:
             print()

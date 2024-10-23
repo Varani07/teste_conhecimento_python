@@ -1,5 +1,6 @@
 import os
 from pessoa import Pessoa
+from caixas_texto import *
 
 def inicio():
     os.system('cls')
@@ -31,27 +32,6 @@ def inicio():
         except ValueError:
             caixa_erro_esperava_int()
 
-def caixa_erro_esperava_int():
-    print()
-    print('----------------------------')
-    print('|---- DIGITE UM NÚMERO ----|')
-    print('----------------------------')
-    print()
-
-def caixa_erro_int_errado():
-    print()
-    print('----------------------------')
-    print('| DIGITE UM NÚMERO VÁLIDO! |')
-    print('----------------------------')
-    print()
-
-def caixa_erro_nick():
-    print()
-    print('----------------------------')
-    print('|- DIGITE UM NOME VÁLIDO! -|')
-    print('----------------------------')
-    print()
-
 def escolhendo_nick():
     running = True
     while running:
@@ -71,14 +51,17 @@ def escolhendo_nick():
                 return 'voltar'
             else:
                 new_player = Pessoa(answer)
-                if not menu(new_player):
-                    return False
+                if len(new_player.nome)>12:
+                        caixa_nick_muitos_caracteres()
+                elif new_player.verify_nick:
+                    if not menu(new_player, True):
+                        return False
+                    else:
+                        return 'voltar'
                 else:
-                    return 'voltar'
+                    caixa_nick_ja_existe()
 
-
-
-def menu(jogador:object):
+def menu(jogador:object, new_player:bool):
     running = True
     while running:
         nick = jogador.nome
@@ -98,6 +81,8 @@ def menu(jogador:object):
         print()
         print(' 6 - Início')
         print(' 7 - Sair')
+        print()
+        print()
         print('                 digite * para salvar                 ')
         print()
         answer = input('Escolha uma opção: ')
@@ -124,6 +109,40 @@ def menu(jogador:object):
 
         except ValueError:
             if answer == '*':
-                jogador.save
+                if new_player:
+                    if jogador.save:
+                        caixa_jogo_salvo()
+                        new_player = False
+                    else:
+                        caixa_erro_ao_salvar()
+                else:
+                    pass
             else:
                 caixa_erro_esperava_int()
+
+def opcoes_de_save():
+    running = True
+    while running:
+        print()
+        print("Deseja sobrescrever um save ou salvar em um novo slot?")
+        print()
+        print("1 - Sobrescrever")
+        print("2 - Salvar")
+        print("3 - Voltar")
+        print()
+        answer = input('Escolha uma opção: ')
+        os.system('cls')
+        try:
+            num = int(answer)
+            match num:
+                case 1:
+                    pass
+                case 2:
+                    pass
+                case 3:
+                    return 'voltar'
+                case _:
+                    caixa_erro_int_errado()
+
+        except ValueError:
+            caixa_erro_esperava_int()

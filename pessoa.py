@@ -2,6 +2,7 @@ import random
 from dao import DAO
 from itens import Computador
 import json
+from datetime import datetime
 
 class Pessoa():
     """Essa classe cria uma Pessoa"""
@@ -38,7 +39,20 @@ class Pessoa():
     @property
     def save(self):
         salvar = DAO()
-        salvar.inserir('player_info', 'dados', '%s', self.player_to_json, "jogo salvo")
+        try:
+            salvar.inserir('player_info', 'dados, nick, data_do_save', '%s, %s, %s', (self.player_to_json, self.nome, datetime.now()))
+            return True
+        except:
+            return False
+
+
+    @property
+    def verify_nick(self):
+        verificar_se_nick_existe = DAO()
+        if verificar_se_nick_existe.visualizar('nick', 'player_info', ' WHERE nick = %s', (self.nome,), True):
+            return False
+        else:
+            return True
 
     @property
     def player_to_json(self):
@@ -66,7 +80,7 @@ class Pessoa():
 
     @property
     def currency(self):
-        print(self.dinheiro)
+        return self.dinheiro
 
     def adicionar_produtos_carrinho_de_compras(self, loja:object, num_serie:str):
         produto = loja.adicionar_produtos_carrinho_de_compras(num_serie)
