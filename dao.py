@@ -6,7 +6,7 @@ class DAO():
         self.connection = ConexaoBanco().get_connection()
         self.cursor = self.connection.cursor()
 
-    def atualizar(self, tabela: str, dados: str, where: str, tipo: str, valor_dados: tuple):
+    def atualizar(self, tabela: str, dados: str, where: str, valor_dados: tuple):
         try:
             sql = f"UPDATE {tabela} SET {dados} WHERE {where}"
 
@@ -14,10 +14,6 @@ class DAO():
 
             self.connection.commit()
             self.cursor.close()
-
-            print(f"| {tipo.upper()} COM SUCESSO! |")
-            print("---------------------------------------------------------")
-            print()
         
         except Error as e:
             print()

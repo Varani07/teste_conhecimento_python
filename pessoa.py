@@ -3,6 +3,7 @@ from dao import DAO
 from itens import Computador
 import json
 from datetime import datetime
+from caixas_texto import *
 
 class Pessoa():
     """Essa classe cria uma Pessoa"""
@@ -40,11 +41,26 @@ class Pessoa():
     def save(self):
         salvar = DAO()
         try:
-            salvar.inserir('player_info', 'dados, nick, data_do_save', '%s, %s, %s', (self.player_to_json, self.nome, datetime.now()))
+            salvar.inserir('player_info', 'dados, nick, data_do_save, tipo', '%s, %s, %s, %s', (self.player_to_json, self.nome, datetime.now(), self.tipo))
             return True
         except:
             return False
+        
+    def deletar_save(self, id:int):
+        delete_save = DAO()
+        try:
+            delete_save.deletar('player_info', 'id = %s', (id,))
+            caixa_save_deletado(True)
+        except:
+            caixa_save_deletado(False)
 
+    def save_overwrite(self, id:int):
+            overwrite_save = DAO()
+            try:
+                overwrite_save.atualizar('player_info', "dados = %s, data_do_save = %s", "id = %s", (self.player_to_json, datetime.now(), id))
+                caixa_sobrescrever(True)
+            except:
+                caixa_sobrescrever(False)
 
     @property
     def verify_nick(self):
@@ -77,6 +93,13 @@ class Pessoa():
         player_json = json.dumps(player_dict)
 
         return player_json
+
+    @property
+    def get_last_save(self):
+        get_id_last_save = DAO()
+        id_save = get_id_last_save.visualizar('id', 'player_info', ' WHERE nick = %s ORDER BY data_do_save DESC LIMIT 1', self.nome, True)
+        return id_save
+        
 
     @property
     def currency(self):
@@ -121,6 +144,10 @@ class Pessoa():
         new_obj.carrinho_de_compras = self.carrinho_de_compras
         new_obj.itens = self.itens
         return new_obj
+    
+    @property
+    def tipo(self):
+        return "Pessoa"
 
     @property
     def comprar(self):
@@ -167,3 +194,7 @@ class Gamer(Pessoa):
 
     def jogar(self):
         pass
+
+    @property
+    def tipo(self):
+        return "Gamer"
