@@ -32,6 +32,8 @@ def desempacotar_json(dados:json, tipo:str):
         #* transforma as mesmas em um dict() e após isso transfere seus
         #* valores para um objeto de sua respectiva classe.
         #! Se os atributos de alguma classe mudar será necessária a manutenção dessa função
+        #TODO Avaliar se é necessario mudar algo para dinamizar 
+        #TODO os objetos presentes dentro do objeto
         info_player = json.loads(dados)
         if tipo == 'Pessoa':
                 player = Pessoa(nome=info_player['nome'])
