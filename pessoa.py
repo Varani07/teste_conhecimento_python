@@ -154,24 +154,25 @@ class Pessoa():
         print("- - - - - - - - - - - - - - - - - - -")
         print()
 
-    @property
-    def parseGamer(self):
-        #* Cria um objeto Gamer a partir de um objeto Pessoa
-        #! Se os atributos da classe mudarem será necessária a manutenção dessa função
-        new_obj = Gamer(nome=self.nome)
+    #* Método Parse guardado, usar se necessário
+    # @property
+    # def parseGamer(self):
+    #     #* Cria um objeto Gamer a partir de um objeto Pessoa
+    #     #! Se os atributos da classe mudarem será necessária a manutenção dessa função
+    #     new_obj = Gamer(nome=self.nome)
 
-        new_obj.energia = self.energia
-        new_obj.dinheiro = self.dinheiro
-        new_obj.vida = self.vida
-        new_obj.criatividade = self.criatividade
-        new_obj.conhecimento_culinaria = self.conhecimento_culinaria
-        new_obj.sorte = self.sorte
-        new_obj.higiene = self.higiene
-        new_obj.fome = self.fome
+    #     new_obj.energia = self.energia
+    #     new_obj.dinheiro = self.dinheiro
+    #     new_obj.vida = self.vida
+    #     new_obj.criatividade = self.criatividade
+    #     new_obj.conhecimento_culinaria = self.conhecimento_culinaria
+    #     new_obj.sorte = self.sorte
+    #     new_obj.higiene = self.higiene
+    #     new_obj.fome = self.fome
 
-        new_obj.carrinho_de_compras = self.carrinho_de_compras
-        new_obj.itens = self.itens
-        return new_obj
+    #     new_obj.carrinho_de_compras = self.carrinho_de_compras
+    #     new_obj.itens = self.itens
+    #     return new_obj
     
     @property
     def tipo(self):
