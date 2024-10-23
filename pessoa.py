@@ -142,7 +142,7 @@ class Pessoa():
     def ver_carrinho_de_compras(self):
         #* Mostra os itens presentes no carrinho de compras do player 
         #* juto ao seu respectivo preço e valor total
-        #? Verificar necessidade de molhoria do método
+        #? Verificar necessidade de melhoria do método
         total = 0
         print()
         print("- - - - - - - - - - - - - - - - - - -")
